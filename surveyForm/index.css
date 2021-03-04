@@ -7,6 +7,7 @@
   --white-img: #f3f3f3;
   --color-label: #666666;
   --color-input: #333333;
+  --color-title: #faebd7;
 }
 
 * {
@@ -20,75 +21,117 @@ body {
   width: 100%;
   min-width: 320px;
   height: auto;
-  background-color: purple;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-image: url("https://colorlib.com/etc/cf/ContactFrom_v2/images/bg-01.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.main {
-  width: 85%;
-  height: auto;
-  margin: 10px 0;
-
-  background-color: var(--white);
-}
-
-.header {
+.container {
   width: 100%;
   height: auto;
-  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(219, 21, 99, 0.8);
 }
 
-.header h1 {
-  font-size: 1.8rem;
+/* --- Section Title --- */
+
+.title {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 3.2rem;
   text-transform: capitalize;
-  text-align: center;
+  color: var(--color-title);
 }
 
-.header p {
-  margin: 8px 0;
-  font-size: 1.3rem;
+.description {
+  margin: 20px 0;
   text-align: center;
+  font-size: 1.8rem;
+  color: var(--color-title);
 }
+
+/* --- Section Form --- */
+
 form {
+  width: 98%;
   padding: 0 10px;
-}
-.inputs-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  max-width: 600px;
+  height: 100%;
+  background-color: var(--white-img);
+  margin-bottom: 20px;
+  border-radius: 10px;
 }
 
-.inputs-field {
-  width: 100%;
-  height: auto;
+.form-group {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
   flex-direction: column;
+  margin-top: 15px;
 }
-.inputs-field input {
-  width: 90%;
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  height: 35px;
   border: none;
   outline: none;
-  margin: 12px 0;
-  font-size: 1.8rem;
-  color: var(--color-input);
+  border-radius: 5px;
+  padding-left: 3px;
+  font-size: 1.6rem;
 }
-.inputs-field::placeholder {
-  margin-bottom: 5px;
+
+option {
+  font-size: 1.5rem;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 2px 2px 4px #888888;
+}
+
+label,
+form p {
+  margin: 10px 0;
   font-size: 1.8rem;
 }
 
-.inputs-field input:focus {
-  border-bottom: 2px solid rebeccapurple;
+.clue {
+  font-size: 1.6rem;
 }
 
-.inputs-field label {
-  text-align: start;
-  font-size: 1.3rem;
-  color: var(--color-label);
+.input-checkbox,
+.input-radio {
+  width: auto;
+  height: 13px;
+  margin-right: 10px;
+  font-size: 1.8rem;
+}
+
+textarea {
+  height: 80px;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  font-size: 1.8rem;
+  margin: 30px 0;
+  padding: 0 10px;
+  outline: none;
+  border: none;
+  background: rgba(219, 21, 99, 0.8);
+  border-radius: 5px;
+  color: var(--white);
+  transition: all 0.8 linear;
+}
+button:active {
+  transform: scale(0.8);
 }

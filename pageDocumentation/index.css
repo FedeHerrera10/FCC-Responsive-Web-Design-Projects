@@ -1,0 +1,141 @@
+:root {
+  /* Colores */
+  --font-primary: "Roboto", sans-serif;
+  --black: #282623;
+  --white: #ffffff;
+  --color-base: #ebebeb;
+  --color-header: #313439;
+  --white-img: #f3f3f3;
+  --color-blue: #101650;
+}
+
+* {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-primary);
+}
+
+body {
+  min-width: 320px;
+}
+
+.navbar {
+  width: 100%;
+  height: auto;
+  background-color: var(--color-blue);
+}
+
+.navbar header {
+  padding: 10px 0;
+  font-size: 2.2rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--white);
+}
+
+.navbar-list {
+  width: 100%;
+}
+
+.navbar-list li {
+  padding: 10px 15px;
+  list-style: none;
+  line-height: 2.5rem;
+  border: 1px solid #7e7b7b;
+}
+.navbar-list li a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  text-align: center;
+  color: var(--white);
+}
+
+.navbar-list li:hover {
+  background-color: #162081;
+}
+
+/* -- Sections -- */
+
+#main-doc {
+  width: 100%;
+  padding: 25px 10px;
+}
+
+.main-section {
+  width: 100%;
+  margin: 40px 0;
+}
+
+.main-section header {
+  margin: 20px 0;
+}
+.main-section header span {
+  padding: 7px 25px;
+  font-size: 2.2rem;
+  color: var(--white);
+  background-color: var(--color-blue);
+  text-align: start;
+}
+
+article p {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  margin: 20px 0;
+}
+
+article ul li {
+  margin: 15px 0;
+  margin-left: 10px;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  list-style: inside;
+}
+
+code {
+  font-size: 1.6rem;
+}
+.language-javascript,
+.language-javascript span {
+  font-size: 1.6rem;
+}
+
+.span--rem {
+  padding: 2px 2px;
+  background-color: pink;
+  font-size: 1.6rem;
+  border-radius: 5px;
+}
+
+article li a {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 550px) {
+  #main-doc {
+    padding: 10px 30px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  body {
+  }
+  .navbar {
+    margin: 0;
+    width: 22%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 1px solid slategrey;
+    overflow: auto;
+  }
+
+  #main-doc {
+    width: 78%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

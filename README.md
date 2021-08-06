@@ -8,7 +8,7 @@
 - [Survey Form](https://github.com/FedeHerrera10/FCC-Responsive-Web-Design-Projects/tree/main/surveyForm)
 - [Product Landing Page](https://github.com/FedeHerrera10/FCC-Responsive-Web-Design-Projects/tree/main/product)
 - [Technical Documentation Page](https://github.com/FedeHerrera10/FCC-Responsive-Web-Design-Projects/tree/main/pageDocumentation)
-- [Personal Portfolio Webpage](https://github.com/FedeHerrera10)
+- [Personal Portfolio Webpage](https://github.com/FedeHerrera10/FCC-Responsive-Web-Design-Projects/tree/main/portfolioPersonal)
 
 ## Run Project 🔧
 
